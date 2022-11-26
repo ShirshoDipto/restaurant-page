@@ -17,6 +17,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center%;
 }
 
 .test {
@@ -24,3 +25,6 @@
     height: 1200px;
     border: thin solid red;
 }
+
+/* have to give credit
+Photo by Pixabay: https://www.pexels.com/photo/alcohol-architecture-bar-beer-260922/ */
