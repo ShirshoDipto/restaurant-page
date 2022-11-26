@@ -13,18 +13,52 @@
 #content {
     min-height: 100vh;
     min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 212, 169);
+}
+
+.header {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-container {
+    flex: 1;
     background: url('./images/pixabay-260922.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center%;
+    background-position: center;
 }
 
-.test {
-    width: 200px;
-    height: 1200px;
-    border: thin solid red;
+.footer {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name h2 {
+    padding: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menus {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
 }
 
 /* have to give credit
-Photo by Pixabay: https://www.pexels.com/photo/alcohol-architecture-bar-beer-260922/ */
+Photo by Pixabay: https://www.pexels.com/photo/alcohol-architecture-bar-beer-260922/ 
+*/
