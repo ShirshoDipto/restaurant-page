@@ -43,7 +43,7 @@ function pageLoad(content) {
     menus.appendChild(tab3);
 
     const pFooter = document.createElement('p');
-    pFooter.textContent = 'Copyright &copy; Shirsho Dipto';
+    pFooter.textContent = `Copyright © Shirsho Dipto`;
 
     footer.appendChild(pFooter);
 
