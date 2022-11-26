@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hello {
+    width: 400px;
+    height: 400px;
+    background: green;
+}
+
+#content {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: url('./images/pixabay-260922.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.test {
+    width: 200px;
+    height: 1200px;
+    border: thin solid red;
+}
