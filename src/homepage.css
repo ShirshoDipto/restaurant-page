@@ -15,7 +15,7 @@
     min-width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color: rgb(231, 212, 169);
+    background-color: rgb(255 244 219);
 }
 
 .header {
@@ -27,11 +27,13 @@
 
 .main-container {
     flex: 1;
-    background: url('./images/pixabay-260922.jpg');
+    background: url('./images/biriyani-g1a6f11a6f_1920.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -52,13 +54,74 @@
     align-items: center;
 }
 
-.menus {
+.res-menus {
     display: flex;
     justify-content: center;
     gap: 60px;
     padding: 20px;
 }
 
+.res-menus div {
+    border: thin solid red;
+}
+
+.res-menus div:hover {
+    text-decoration: underline;
+}
+
+
+/* Menu css */
+.all-menus {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+    max-width: 70%;
+    border: thin solid red;
+    gap: 30px;
+    padding: 20px;
+}
+
+.menu-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    border: thin solid blue;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+.menu-card img {
+    width: 200px;
+    height: 200px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.description button {
+    width: 100px;
+}
+
+
+
+
+
+
+
+
 /* have to give credit
 Photo by Pixabay: https://www.pexels.com/photo/alcohol-architecture-bar-beer-260922/ 
 */
+
+/*
+Photo by Shourav Sheikh: https://www.pexels.com/photo/rice-platter-biriyani-11170284/ 
+ */
+
+
+ /* 
+pixabay biriyani credit
+
+ Image by <a href="https://pixabay.com/users/soumen59-8174545/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7599454">Soumen Ghosh</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7599454">Pixabay</a>
+ */

@@ -28,15 +28,17 @@ function pageLoad(content) {
     header.appendChild(name);
 
     const menus = document.createElement('div');
-    menus.classList.toggle('menus');
+    menus.classList.toggle('res-menus');
     header.appendChild(menus);
 
     const tab1 = document.createElement('div');
     const tab2 = document.createElement('div');
     const tab3 = document.createElement('div');
+
+    // text contents
     tab1.textContent = 'Home';
     tab2.textContent = 'Menu';
-    tab3.textContent = 'Contact';
+    tab3.textContent = 'About';
 
     menus.appendChild(tab1);
     menus.appendChild(tab2);
@@ -54,18 +56,3 @@ function pageLoad(content) {
 
 
 export { pageLoad };
-{/* <div class="header">
-    <div class="name">
-        <h2>My Restaurant</h2>
-        <p>127/1, Shusme Road</p>
-        <p>Kushtia, Khulna, Bangladesh</p>
-        <p>Mob: +88017xxxxxxxx</p>
-    </div>
-    <div class="menus">
-        <div class="tabs">Home</div>
-        <div class="tabs">Menu</div>
-        <div class="tabs">Contact</div>
-    </div>
-</div>
-<div class="main-container"></div>
-<div class="footer"><p>Copyright &copy; Shirsho Dipto</p></div> */}
