@@ -98,6 +98,7 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
+    border: thin solid red;
 }
 
 .description button {
