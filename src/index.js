@@ -1,6 +1,7 @@
 import './homepage.css'
 import { pageLoad } from './homepage';
 import { loadMenu } from './menu';
+import { loadAbout } from './about';
 import menuPic1 from './images/biryani-platter.jpg' 
 import menuPic2 from './images/mario-raj.jpg' 
 import menuPic3 from './images/mutton-biryani.jpg' 
@@ -28,20 +29,26 @@ pageLoad(content);
 
 
 const menus = document.querySelectorAll('.res-menus div');
+const mainContainer = document.querySelector('.main-container');
 
 menus.forEach((menu) => {
     menu.addEventListener('click', (e) => {
         if (e.target.textContent === 'Home') {
-            pageLoad(content);
+            if (mainContainer.firstElementChild.classList.value === 'all-menus') {
+                const allMenus = document.querySelector('.all-menus');
+                mainContainer.removeChild(allMenus);
+            }
         }
         else if (e.target.textContent === 'Menu') {
-            const mainContainer = document.querySelector('.main-container');
-            console.log(mainContainer.firstElementChild);
+
+            // if menu has all content:
+            //  remove it and insert it's own all menu
             loadMenu(mainContainer, pic1, pic2, pic3, pic4, pic5, pic6);
             // run the other function from the other module.
         }
         else if (e.target.textContent === 'About') {
             // run the other function from the other module.
+            loadAbout(mainContainer);
         }
     })    
 });
