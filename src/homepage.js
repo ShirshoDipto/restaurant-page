@@ -76,10 +76,3 @@ function pageLoad(content) {
 
 
 export { pageLoad, insertResName };
-
-
-
-{/* <div class="big-title">
-<div class="banner">Shusme Biryani House</div>
-<div class="subtitle">You Have To Come Back Again</div>
-</div> */}

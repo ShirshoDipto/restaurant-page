@@ -8,13 +8,6 @@
     --button-color: red;
 }
 
-
-.hello {
-    width: 400px;
-    height: 400px;
-    background: green;
-}
-
 #content {
     min-height: 100vh;
     min-width: 100vw;
@@ -24,6 +17,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 .header {
@@ -67,9 +61,6 @@
     padding: 20px;
 }
 
-.res-menus div {
-    /* border: thin solid red; */
-}
 
 .res-menus div:hover {
     text-decoration: underline;
@@ -92,7 +83,6 @@
 .menu-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px);
-    border: thin solid blue;
     justify-content: space-between;
     /* gap: 20px; */
 }
@@ -107,7 +97,6 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
-    border: thin solid red;
 }
 
 .description button {
@@ -133,6 +122,9 @@
     font-weight: bold;
     font-size: 100px;
 }
+.all-menus2, .description {
+    color: var(--khaki-bakground);
+}
 
 
 .our-story {
@@ -147,12 +139,10 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    border: thin solid red;
 }
 
 .three-div {
     width: 300px;
-    border: thin solid red;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,7 +1,7 @@
 
 function loadAbout( mainContainer ) {
     if (mainContainer.firstElementChild.classList.value !== 'all-menus2') {
-        
+
         mainContainer.removeChild(mainContainer.firstElementChild);
 
         const allMenus = document.createElement('div');
@@ -58,9 +58,9 @@ function loadAbout( mainContainer ) {
         const est1 = document.createElement('div');
         est1.classList.add('est');
         const est2 = document.createElement('div');
-        est1.classList.add('est');
+        est2.classList.add('est');
         const est3 = document.createElement('div');
-        est1.classList.add('est');
+        est3.classList.add('est');
     
         div1.appendChild(est1);
         div2.appendChild(est2);
@@ -108,48 +108,3 @@ function loadAbout( mainContainer ) {
 
 
 export {loadAbout};
-
-
-
-
-{/* <div class="all-menus">
-                <div class="our-story">
-                    <div class="headline">Our Story</div>
-                    <div class="underneath-headline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut</div>
-                </div>
-                <div class="story-element">
-                    <div class="three-div">
-                        <div class="icon">
-                            <img src="anchor.png" alt="anchor icon">
-                        </div>
-                        <div class="est">
-                            <h2>EST</h2>
-                        </div>
-                        <div class="est-detail">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt laborum deserunt obcaecati praesentium illum blanditiis voluptatem neque, impedit inventore aliquid ea, sint dolorum culpa reprehenderit nulla labore ratione ab harum.</p>
-                        </div>
-                    </div>
-                    <div class="three-div">
-                        <div class="icon">
-                            <img src="food-turkey.png" alt="food turkey icon">
-                        </div>
-                        <div class="est">
-                            <h2>Cooking Tradition</h2>
-                        </div>
-                        <div class="est-detail">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt laborum deserunt obcaecati praesentium illum blanditiis voluptatem neque, impedit inventore aliquid ea, sint dolorum culpa reprehenderit nulla labore ratione ab harum.</p>
-                        </div>
-                    </div>
-                    <div class="three-div">
-                        <div class="icon">
-                            <img src="coffee.png" alt="coffee icon">
-                        </div>
-                        <div class="est">
-                            <h2>Food Quality</h2>
-                        </div>
-                        <div class="est-detail">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt laborum deserunt obcaecati praesentium illum blanditiis voluptatem neque, impedit inventore aliquid ea, sint dolorum culpa reprehenderit nulla labore ratione ab harum.</p>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
