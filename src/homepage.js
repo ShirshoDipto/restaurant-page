@@ -1,4 +1,22 @@
 
+function insertResName(mainContainer) {
+
+    const bigTitle = document.createElement('div');
+    bigTitle.classList.add('big-title');
+    mainContainer.appendChild(bigTitle);
+
+    const banner = document.createElement('div');
+    banner.classList.add('banner');
+    banner.textContent = 'Shusme Biryani House';
+    bigTitle.appendChild(banner);
+
+    const subtitle = document.createElement('div');
+    subtitle.classList.add('subtitle');
+    subtitle.textContent = 'You Will Surely Come Back Again';
+    bigTitle.appendChild(subtitle);
+
+}
+
 
 function pageLoad(content) {
 
@@ -11,13 +29,13 @@ function pageLoad(content) {
     footer.classList.toggle('footer');
 
     const h2 = document.createElement('h2');
-    h2.textContent = 'My Restaurant';
+    h2.textContent = 'Order Now!';
     const p1 = document.createElement('p');
     const p2 = document.createElement('p');
     const p3 = document.createElement('p');
-    p1.textContent = '127/1, Shusme Road';
-    p2.textContent = 'Kushtia, Khulna, Bangladesh';
-    p3.textContent = 'Mob: +88017xxxxxxxx';
+    p1.textContent = 'Mob: +88017xxxxxxxx';
+    p2.textContent = '127/1, Shusme Road';
+    p3.textContent = 'Kushtia, Khulna, Bangladesh';
 
     const name = document.createElement('div');
     name.classList.toggle('name');
@@ -52,7 +70,16 @@ function pageLoad(content) {
     content.appendChild(header);
     content.appendChild(mainContainer);
     content.appendChild(footer);
+
+    insertResName(mainContainer);
 }
 
 
-export { pageLoad };
+export { pageLoad, insertResName };
+
+
+
+{/* <div class="big-title">
+<div class="banner">Shusme Biryani House</div>
+<div class="subtitle">You Have To Come Back Again</div>
+</div> */}

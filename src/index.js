@@ -1,5 +1,5 @@
 import './homepage.css'
-import { pageLoad } from './homepage';
+import { pageLoad, insertResName } from './homepage';
 import { loadMenu } from './menu';
 import { loadAbout } from './about';
 import menuPic1 from './images/biryani-platter.jpg' 
@@ -34,20 +34,15 @@ const mainContainer = document.querySelector('.main-container');
 menus.forEach((menu) => {
     menu.addEventListener('click', (e) => {
         if (e.target.textContent === 'Home') {
-            if (mainContainer.firstElementChild.classList.value === 'all-menus') {
-                const allMenus = document.querySelector('.all-menus');
-                mainContainer.removeChild(allMenus);
+            if (mainContainer.firstElementChild.classList.value !== 'big-title') {
+                mainContainer.removeChild(mainContainer.firstElementChild);
+                insertResName(mainContainer);
             }
         }
         else if (e.target.textContent === 'Menu') {
-
-            // if menu has all content:
-            //  remove it and insert it's own all menu
             loadMenu(mainContainer, pic1, pic2, pic3, pic4, pic5, pic6);
-            // run the other function from the other module.
         }
         else if (e.target.textContent === 'About') {
-            // run the other function from the other module.
             loadAbout(mainContainer);
         }
     })    
