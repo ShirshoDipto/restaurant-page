@@ -6,6 +6,7 @@
 :root {
     --khaki-bakground: rgb(255 244 219);
     --button-color: red;
+    --light-khaki: rgb(245, 244, 235);
 }
 
 body {
@@ -95,7 +96,7 @@ body {
     width: 200px;
     height: 200px;
     border: 3px solid var(--khaki-bakground);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .description {
@@ -107,6 +108,16 @@ body {
 
 .description button {
     width: 100px;
+    background-color: var(--khaki-bakground);
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.description button:hover{
+    background-color: var(--light-khaki);
 }
 
 
@@ -118,7 +129,7 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 70%;
-    gap: 30px;
+    gap: 50px;
     padding: 20px;
 }
 
@@ -128,7 +139,7 @@ body {
     font-size: 100px;
 }
 .all-menus2, .description {
-    color: var(--khaki-bakground);
+    color: var(--light-khaki);
 }
 
 
@@ -144,6 +155,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .three-div {
@@ -152,6 +164,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 10px;
 }
 
 .icon1 {
@@ -187,9 +200,10 @@ body {
 .banner {
     font-size: 100px;
     color: yellow;
+    font-weight: bold;
 }
 
 .subtitle {
     color: red;
-    font-size: 60px;
+    font-size: 40px;
 }
