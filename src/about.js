@@ -1,4 +1,5 @@
 
+
 function loadAbout( mainContainer ) {
     if (mainContainer.firstElementChild.classList.value !== 'all-menus2') {
 
@@ -8,6 +9,7 @@ function loadAbout( mainContainer ) {
         allMenus.classList.add('all-menus2');
         mainContainer.appendChild(allMenus);
     
+        insertInitialDivs(allMenus);
     
         const ourStory = document.createElement('div');
         ourStory.classList.add('our-story');

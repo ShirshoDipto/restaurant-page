@@ -1,4 +1,25 @@
 
+function insertImage(menuCard1, menuCard2, menuCard3, menuCard4, menuCard5, menuCard6 ) {
+    const pic1 = document.createElement('img');
+    pic1.setAttribute('src', 'images/mario-raj.jpg');
+    const pic2 = document.createElement('img');
+    pic2.setAttribute('src', 'images/biryani-platter.jpg');
+    const pic3 = document.createElement('img');
+    pic3.setAttribute('src', 'images/biriyani.jpg');
+    const pic4 = document.createElement('img');
+    pic4.setAttribute('src', 'images/kebab-biryani.jpg');
+    const pic5 = document.createElement('img');
+    pic5.setAttribute('src', 'images/indian-biryani.jpg');
+    const pic6 = document.createElement('img');
+    pic6.setAttribute('src', 'images/chicken-biryani.jpg');
+
+    menuCard1.appendChild(pic1);
+    menuCard2.appendChild(pic2);
+    menuCard3.appendChild(pic3);
+    menuCard4.appendChild(pic4);
+    menuCard5.appendChild(pic5);
+    menuCard6.appendChild(pic6);
+}
 
 
 function loadMenu(mainContainer) {
@@ -32,27 +53,11 @@ function loadMenu(mainContainer) {
         allMenus.appendChild(menuCard6);
     
         // create img's
+        insertImage(menuCard1, menuCard2, menuCard3, menuCard4, menuCard5, menuCard6)
+    
 
-        const pic1 = document.createElement('img');
-        pic1.setAttribute('src', 'images/mario-raj.jpg');
-        const pic2 = document.createElement('img');
-        pic2.setAttribute('src', 'images/biryani-platter.jpg');
-        const pic3 = document.createElement('img');
-        pic3.setAttribute('src', 'images/biriyani.jpg');
-        const pic4 = document.createElement('img');
-        pic4.setAttribute('src', 'images/kebab-biryani.jpg');
-        const pic5 = document.createElement('img');
-        pic5.setAttribute('src', 'images/indian-biryani.jpg');
-        const pic6 = document.createElement('img');
-        pic6.setAttribute('src', 'images/chicken-biryani.jpg');
-    
-        menuCard1.appendChild(pic1);
-        menuCard2.appendChild(pic2);
-        menuCard3.appendChild(pic3);
-        menuCard4.appendChild(pic4);
-        menuCard5.appendChild(pic5);
-        menuCard6.appendChild(pic6);
-    
+
+        
         // descriptions
     
         const description1 = document.createElement('div');
@@ -98,6 +103,8 @@ function loadMenu(mainContainer) {
         description6.appendChild(title6);
     
     
+
+
         // description of the biryani
     
         const p1 = document.createElement('p');
@@ -122,6 +129,8 @@ function loadMenu(mainContainer) {
         description5.appendChild(p5);
         description6.appendChild(p6);
     
+
+
         // buttons for order
     
         const button1 = document.createElement('button');
