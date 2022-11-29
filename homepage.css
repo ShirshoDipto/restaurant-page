@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --khaki-bakground: rgb(255 244 219);
+    --button-color: red;
+}
+
+body {
+    background: url('./images/biriyani-g1a6f11a6f_1920.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-y: scroll;
+}
+
+#content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--khaki-bakground);
+}
+
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--khaki-bakground);
+}
+
+.name h2 {
+    padding: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.res-menus {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+
+.res-menus div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Menu css */
+
+
+.all-menus {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
+    max-width: 70%;
+    gap: 30px;
+    padding: 20px;
+}
+
+.menu-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: space-between;
+}
+
+.menu-card img {
+    width: 200px;
+    height: 200px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.description button {
+    width: 100px;
+}
+
+
+/* ABOUT CSS */
+
+.all-menus2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;
+    gap: 30px;
+    padding: 20px;
+}
+
+
+.headline {
+    font-weight: bold;
+    font-size: 100px;
+}
+.all-menus2, .description {
+    color: var(--khaki-bakground);
+}
+
+
+.our-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.story-element {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.three-div {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon1 {
+    background: url(./icons/anchor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+.icon2 {
+    background: url(./icons/food-turkey.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+.icon3 {
+    background: url(./icons/coffee.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+}
+
+
+.big-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    font-size: 100px;
+    color: yellow;
+}
+
+.subtitle {
+    color: red;
+    font-size: 60px;
+}
