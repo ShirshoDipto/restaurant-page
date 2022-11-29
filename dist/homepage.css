@@ -8,16 +8,17 @@
     --button-color: red;
 }
 
-#content {
-    min-height: 100vh;
-    min-width: 100vw;
-    display: flex;
-    flex-direction: column;
+body {
     background: url('./images/biriyani-g1a6f11a6f_1920.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -75,7 +76,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 450px));
     max-width: 70%;
-    /* border: thin solid red; */
     gap: 30px;
     padding: 20px;
 }
@@ -84,7 +84,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px);
     justify-content: space-between;
-    /* gap: 20px; */
 }
 
 .menu-card img {
@@ -112,7 +111,6 @@
     justify-content: center;
     align-items: center;
     max-width: 70%;
-    /* border: thin solid red; */
     gap: 30px;
     padding: 20px;
 }
@@ -188,26 +186,3 @@
     color: red;
     font-size: 60px;
 }
-
-
-
-
-
-
-
-
-
-/* have to give credit
-Photo by Pixabay: https://www.pexels.com/photo/alcohol-architecture-bar-beer-260922/ 
-*/
-
-/*
-Photo by Shourav Sheikh: https://www.pexels.com/photo/rice-platter-biriyani-11170284/ 
- */
-
-
- /* 
-pixabay biriyani credit
-
- Image by <a href="https://pixabay.com/users/soumen59-8174545/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7599454">Soumen Ghosh</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=7599454">Pixabay</a>
- */

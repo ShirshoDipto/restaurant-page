@@ -1,7 +1,7 @@
 
 
 
-function loadMenu(mainContainer, pic1, pic2, pic3, pic4, pic5, pic6) {
+function loadMenu(mainContainer) {
     if (mainContainer.firstElementChild.classList.value !== 'all-menus') {
 
         mainContainer.removeChild(mainContainer.firstElementChild);
@@ -32,6 +32,19 @@ function loadMenu(mainContainer, pic1, pic2, pic3, pic4, pic5, pic6) {
         allMenus.appendChild(menuCard6);
     
         // create img's
+
+        const pic1 = document.createElement('img');
+        pic1.setAttribute('src', 'images/mario-raj.jpg');
+        const pic2 = document.createElement('img');
+        pic2.setAttribute('src', 'images/biryani-platter.jpg');
+        const pic3 = document.createElement('img');
+        pic3.setAttribute('src', 'images/biriyani.jpg');
+        const pic4 = document.createElement('img');
+        pic4.setAttribute('src', 'images/kebab-biryani.jpg');
+        const pic5 = document.createElement('img');
+        pic5.setAttribute('src', 'images/indian-biryani.jpg');
+        const pic6 = document.createElement('img');
+        pic6.setAttribute('src', 'images/chicken-biryani.jpg');
     
         menuCard1.appendChild(pic1);
         menuCard2.appendChild(pic2);
